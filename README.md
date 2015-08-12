@@ -10,13 +10,13 @@ In my HTML page, I created a form element that has an input type of submit.
 I created an app.js file and included it after my HTML body. Inside my app.js file, I made two event handlers:
 * One to hide the #results div 
 
-```
+```javascript
 $("#results").hide();
 ```
 
 * One for form submission
 
-```
+```javascript
 $("form").on("submit", function(event){
 	event.preventDefault();
 
@@ -29,7 +29,7 @@ The preventDefault() method was needed to stop the page from refreshing.
 ## 4. AJAX Request
 With the input supplied in the form, I sent an AJAX GET request to Zillow's API, including an event handler that will remove any content in the #results div. 
 
-```
+```javascript
 $("#results").empty();
 ``` 
 
@@ -37,7 +37,7 @@ This will ensure that every time the form is submitted, only the results of newl
 
 Upon success of that request, I created an event handler to show the results obtained from the API. 
 
-```
+```javascript
 $("#results").show();
 ``` 
 
