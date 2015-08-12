@@ -20,7 +20,6 @@ $("form").on("submit", function(event){
 			$("#results").empty();
 			
 			var result = data["response"];
-			console.log(result);
 
 			// The price of a house that a borrower may be able to afford
 			var affordabilityAmt = result["affordabilityAmount"];
