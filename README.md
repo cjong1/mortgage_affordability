@@ -1,7 +1,7 @@
 # Implementing a Mortgage Affordability Calculator with Zillow's API
 
 ## 1. Create the Basic HTML Page and include jQuery
-I created the basic HTML page and included two divs, one with the id of #results. I used jQuery in my application by including jQuery from Google.
+I created the basic HTML page and included a div with the id of #results. I used jQuery in my application by including it from Google Hosted Libraries.
 
 ## 2. Create a Form
 In my HTML page, I created a form element that has an input type of submit. 
@@ -11,3 +11,6 @@ I created an app.js file and included it after my HTML body. Inside my app.js fi
 
 ## 4. AJAX Request
 With the input supplied in the form, I sent an AJAX GET request to Zillow's API. Upon success of that request, I created an event handler to show the results obtained from the API. I appended these results in a table to the #results div.
+
+## 5. Design
+When the calculator was functional, I included Twitter Bootstrap and customized CSS to make the calculator more visually appealing.
